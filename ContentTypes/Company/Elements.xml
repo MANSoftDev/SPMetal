@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!-- Parent ContentType: Item (0x01) -->
+  <ContentType ID="0x0100bd31a6951c0243faa9ad062940325d8a"
+               Name="CPCompany"
+               Group="CodeProject"
+               Description="Demo content type for companies"
+               Inherits="TRUE"
+               Version="0">
+    <FieldRefs>
+      <FieldRef ID="{e05520db-acd3-49aa-89be-17b86b98aa7b}" Name="CompanyName" />
+    </FieldRefs>
+  </ContentType>
+</Elements>

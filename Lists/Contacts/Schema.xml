@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<List xmlns:ows="Microsoft SharePoint" Title="Contacts" FolderCreation="FALSE" Direction="$Resources:Direction;" Url="Lists/Contacts" BaseType="0" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <MetaData>
+    <ContentTypes>
+      <ContentType ID="0x0100524a1bb0926f4201b7c8e3c366d36fcd" Name="Contact" Group="CodeProject" Description="Demo content type for contacts" Inherits="TRUE" Version="0">
+        <FieldRefs>
+          <FieldRef ID="{cbad7981-71e3-4c86-a579-cc7746dcc4a7}" Name="FirstName" />
+          <FieldRef ID="{9d387fe6-8fb6-4437-a32e-a89e2d7d36ec}" Name="LastName" />
+          <FieldRef ID="{77850ecf-8fce-4a97-8183-d85638145609}" Name="ContactTitle" />
+          <FieldRef ID="{A51710C4-B16C-4982-B0F7-DD4B1F053C9B}" Name="CompanyLookup"/>
+        </FieldRefs>
+      </ContentType>
+    </ContentTypes>
+    <Fields>
+      <Field ID="{cbad7981-71e3-4c86-a579-cc7746dcc4a7}" Name="FirstName" DisplayName="First Name" Type="Text" Group="CodeProject" />
+      <Field ID="{9d387fe6-8fb6-4437-a32e-a89e2d7d36ec}" Name="LastName" DisplayName="Last Name" Type="Text" Group="CodeProject" />
+      <Field ID="{77850ecf-8fce-4a97-8183-d85638145609}" Name="ContactTitle" DisplayName="Title" Type="Text" Group="CodeProject" />
+      <Field ID="{A51710C4-B16C-4982-B0F7-DD4B1F053C9B}" Name="CompanyLookup" DisplayName="Company" Group="CodeProject" Type="Lookup" List="Lists/Companies" PrependId="TRUE" Required="TRUE" EnforceUniqueValues="FALSE" ShowField="ID"  />
+    </Fields>
+    <Views>
+      <View BaseViewID="0" Type="HTML" MobileView="TRUE" TabularView="FALSE">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          <FieldRef Name="LinkTitleNoMenu">
+          </FieldRef>
+        </ViewFields>
+        <Query>
+          <OrderBy>
+            <FieldRef Name="Modified" Ascending="FALSE">
+            </FieldRef>
+          </OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="AddNewAnnouncement" Location="Resource(wss,addnewitem)" />
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_ONET_HOME)" />
+        </ParameterBindings>
+      </View>
+      <View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,objectiv_schema_mwsidcamlidC24;" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/images/generic.png" Url="AllItems.aspx">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          <FieldRef Name="Attachments">
+          </FieldRef>
+          <FieldRef Name="LinkTitle">
+          </FieldRef>
+        </ViewFields>
+        <Query>
+          <OrderBy>
+            <FieldRef Name="ID">
+            </FieldRef>
+          </OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
+        </ParameterBindings>
+      </View>
+    </Views>
+    <Forms>
+      <Form Type="DisplayForm" Url="DispForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="EditForm" Url="EditForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="NewForm" Url="NewForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+    </Forms>
+  </MetaData>
+</List>

@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Web xmlns="http://schemas.microsoft.com/SharePoint/2009/spmetal" Class="CodeProjectDemo">
+  <List Name="Contacts" Member="CPContacts">
+    <ContentType Name="Contact" Class="CompanyContact">
+      <Column Name="CompanyLookup" Member="CPCompany"/>
+      <ExcludeColumn Name="ContactTitle"/>
+    </ContentType>
+  </List>
+  <List Name="Companies"/>
+  <ExcludeOtherLists/>
+  <ContentType Name="CPContact">
+    <Column Name="ContactTitle" Member="ContactTitle"/>
+  </ContentType>
+</Web>

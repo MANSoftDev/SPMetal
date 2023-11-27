@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="574bd52a-5776-4d0e-8e40-1b7dd94dfac9" solutionId="574bd52a-5776-4d0e-8e40-1b7dd94dfac9" resetWebServer="false" name="SPMetal" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="16c38189-d2b9-4100-9d3a-2d88ade8734b" />
+  </features>
+</package>

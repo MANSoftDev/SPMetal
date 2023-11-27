@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!-- Parent ContentType: Item (0x01) -->
+  <ContentType ID="0x0100524a1bb0926f4201b7c8e3c366d36fcd"
+               Name="CPContact"
+               Group="CodeProject"
+               Description="Demo content type for contacts"
+               Inherits="TRUE"
+               Version="0">
+    <FieldRefs>
+      <FieldRef ID="{cbad7981-71e3-4c86-a579-cc7746dcc4a7}" Name="FirstName" />
+      <FieldRef ID="{9d387fe6-8fb6-4437-a32e-a89e2d7d36ec}" Name="LastName" />
+      <FieldRef ID="{77850ecf-8fce-4a97-8183-d85638145609}" Name="ContactTitle" />
+      <FieldRef ID="{83abdcd4-9591-4dde-a1be-e141d73a87d1}" Name="ContactType"/>
+    </FieldRefs>
+  </ContentType>
+</Elements>

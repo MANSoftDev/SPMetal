@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Field ID="{cbad7981-71e3-4c86-a579-cc7746dcc4a7}" Name="FirstName" DisplayName="First Name" Type="Text" Group="CodeProject" />
+  <Field ID="{9d387fe6-8fb6-4437-a32e-a89e2d7d36ec}" Name="LastName" DisplayName="Last Name" Type="Text" Group="CodeProject" />
+  <Field ID="{77850ecf-8fce-4a97-8183-d85638145609}" Name="ContactTitle" DisplayName="Title" Type="Text" Group="CodeProject" />
+  <Field ID="{83abdcd4-9591-4dde-a1be-e141d73a87d1}" Name="ContactType" DisplayName="Type of contact" Type="Choice" Group="CodeProject">
+    <CHOICES>
+      <CHOICE>Sales Rep</CHOICE>
+      <CHOICE>VP</CHOICE>
+      <CHOICE>Pointy Haired Boss</CHOICE>
+    </CHOICES>
+  </Field>
+  
+  <Field ID="{e05520db-acd3-49aa-89be-17b86b98aa7b}" Name="CompanyName" DisplayName="Company" Type="Text" Group="CodeProject" />
+</Elements>
